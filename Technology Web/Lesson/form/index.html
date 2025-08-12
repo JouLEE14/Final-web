@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h2>Com.Form</h2>
+
+    <form>
+
+        Name: <input type="text" name="firstname" value="Joulian" disabled="50"> <br><br>
+        <!-- 
+         input    ໃຫ້ປ້ອນຂໍ້ມູນເປັນ 
+         type= "text"
+         value= " "   ເປັນຄ່າທິ່ສະເເດງຢູ່ໃນກ່ອງ
+         disabled= " " ເຮັດໃຫ້ຂໍ້ຄວາມຈາງລົງ
+         size=" "     ເປັນຂະໜາດ, ຄວາມກ້ວາງຂອງກ່ອງ
+          -->
+        Name: <input type="text" name="firstname" size="50" maxlength="25">   <!-- maxlength="25" -->
+
+        Surname: <input type="text" name="lastname" size="50" maxlength="25">
+        <br><br>
+        Password: <input type="password" name="pwd" /><br><br>
+
+        Village: <input type="text" name="Village" list="vill">
+        <details id="vill">
+            <option value="">love</option>
+            <option value="">loved</option>
+            <option value="">loved</option>
+            <option value="">loves</option>
+            <option value="">loved</option>
+        </details> <br><br>
+
+        Search: <input type="text" name="keyword" required><button>search</button>
+    </form>
+</body>
+
+</html>
